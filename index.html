@@ -7,6 +7,7 @@
         <link href='daveEllis.css' rel='stylesheet'/>
         <script src='nQuery.js'></script>
         <script src='davis.js'></script>
+        <script src="assigment10.js"></script>
     </head>
     <body>
         <header>
@@ -21,13 +22,21 @@
             </nav>
         </header>
         <main class='vc1'>
+            <div class="video-wrapper">
+                <video id="movie" controls>
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.mp4" />
+                    <source src="http://media.w3.org/2010/05/sintel/trailer.webm"
+                        type='video/webm; codecs="vp8, vorbis"' />
+                </video>
+            </div>
+    
             <p>
                 This page is written, with permission,
                 from <a href='http://www.novolume.co.uk/blog/all-websites-look-the-same/'>
                 Dave Ellis' Blog</a> to mimic that page.
             </p>
         </main>
-        <footer>
+        <footer id="carousel">
             <article id="left"></article>
             <article id="center"></article>
             <article id="right"></article>
