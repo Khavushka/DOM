@@ -34,7 +34,7 @@ const $ = function(foo){
     return document.getElemntById(foo);
 }
 const handleSubmit=function(){
-    let name = $('navn').value;
+    let cookies = $('cookies').value;
     let bday = $('bday').value;:
     let content = navn + bday;
     createCookie(content, 42);

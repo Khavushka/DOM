@@ -35,7 +35,7 @@ let validate = function (e) {
 
 let dispSlide = function () {
     $('ranger').innerHTML = 
-                                   $('rng').value;
+         $('rng').value;
 }
 
 let followme = function () {

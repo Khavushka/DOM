@@ -7,15 +7,93 @@
     <script src="cookies.js"></script>
 </head>
 <body>
-    <main>
-        <form action="http://x15.dk/hitme.php">
-            <label for="fname">Name:</label>
-            <input type="text" id="first_name" name="fname" maxlength="1">
-            <br>
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" min="1900-01-01" max="2000-01-01">
-            <input type="submit" value="OK">
-        </form>
-      </main>
+    <form action='http://x15.dk/hitme.php' method='post' 
+    id='formal'>
+  <fieldset class='left'>
+      <legend>Textual</legend>
+      <div>
+          <label for="email">Enter email address:</label>
+          <br/>
+          <input id="email" name="useremail" 
+                 type="email" placeholder='aaa@bbb.dk'
+                 required/>
+      </div>
+      <div>
+          <label for="url">Enter url:</label>
+          <br/>
+          <input id="url" name="url" type="url" 
+                 placeholder='http://aaa.dk' required/>
+      </div>
+      <div>
+          <label for="search">Search</label>
+          <br/>
+          <input id="search" name="criteria" 
+                 type="search" required/>
+      </div>
+  </fieldset>
+  <fieldset class='right'>
+      <legend>Temporal</legend>
+      <div>
+          <label for="dat">Enter date:</label>
+          <br/>
+          <input type="date" id="dat" name="date" 
+                 placeholder='yyyy-mm-dd' required/>
+                 <span id='dateplch'></span>
+      </div>
+      <div>
+          <label for="mon">Enter month:</label>
+          <br/>
+          <input type="month" id="mon" name="month" required/>
+      </div>
+      <div>
+          <label for="wk">Enter week:</label>
+          <br/>
+          <input type="week" id="wk" name="weekno" required/>
+      </div>
+      <div>
+          <label for="tim">Enter time:</label>
+          <br/>
+          <input type="time" id="tim" name="tod" 
+                 placeholder='hh:mm:ss' required/>
+      </div>
+      <div>
+          <label for="dtg">Enter datetime:</label>
+          <br/>
+          <input type="datetime" id="dtg" name="dtg" 
+                 placeholder='yyyy-mm-dd hh:mm:ss' required/>
+      </div>
+  </fieldset>
+  <fieldset class='left'>
+      <legend>Others</legend>
+      <div>
+          <label for="phone">Enter phone:</label>
+          <br/>
+          <input type="tel" id="phone" name="mobile" required/>
+      </div>
+      <div>
+          <label for="rng">Enter number in range:</label>
+          <br/>
+          <input type="range" id="rng" name="atob"  
+                 min="32" max="212" value="100"/>
+                 <span id='ranger'></span>
+      </div>
+      <div>
+          <label for="num">Enter number:</label>
+          <br/>
+          <input type="number" id="num" name="atob" required/>
+      </div>
+  </fieldset>
+  <fieldset class='right'>
+      <legend>Buttons</legend>
+      <p id='buttons'>
+          <input type='submit' id='b1' value='Go'/>
+          <input type='reset' value='Reset'/>
+      </p>
+  </fieldset>
+</form>
+</main>
+<footer>
+<address>&copy; nml, 2015-10-01</address>
+</footer>
 </body>
 </html>
