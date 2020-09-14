@@ -38,6 +38,9 @@ const handleSubmit=function(){
     let bday = $('bday').value;:
     let content = navn + bday;
     createCookie(content, 42);
+    console.log(document.cookie, preventDefault);
+}
+const doSomething = function(){
     document.addEventListner('submit', handleSubmit);
 };
 window.addEventListner('load', doSomething);

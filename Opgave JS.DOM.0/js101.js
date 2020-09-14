@@ -6,16 +6,17 @@ let isDate = function (date) {
     return true;
 }
 /* 
-var validate;
+function validate(e) {
 switch (e) {
-    case (!Modernizr.inputtypes.date):
-        let date = $('dat');
-        window.alert(date.value);
+    case 0:
+        alert (!Modernizr.inputtypes.date);
         break;
-    case (!isDate(date.value));
-         date.focus();
-         e.preventDefault();
+    case 1;
+        alert (!isDate(date.value);
         break;
+    default:
+        return false;
+ }
 }
 */
 
