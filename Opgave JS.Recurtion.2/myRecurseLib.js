@@ -1,12 +1,12 @@
 "use strict";
 
 function pow(r, e) {
-        let res = 1;
+        let resultet = 1;
         while (e > 0) {
-            res *= r;
+            resultet *= r;
             e -= 1;
         }
-        return res;
+        return resultet;
     }
     let r = Number(prompt('Indsæt firste tal'));
     let e = Number(prompt('Indsæt second tal'));
